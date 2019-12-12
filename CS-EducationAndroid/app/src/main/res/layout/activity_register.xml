@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/usernametext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+
+        android:layout_height="wrap_content"
+        android:id="@+id/register_username"
+        android:layout_width="200dp"
+        android:layout_below="@+id/usernametext1"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/register_passwordtext"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_username"
+
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_width="200dp"
+        android:layout_below="@+id/register_passwordtext"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:layout_marginTop="10dp"
+        android:id="@+id/confirm_passwordtext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_password"
+        />
+
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_width="200dp"
+        android:layout_below="@+id/confirm_passwordtext"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/emailtext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_confirm_password"/>
+
+    <EditText
+
+        android:layout_height="wrap_content"
+        android:id="@+id/register_email"
+        android:layout_width="200dp"
+        android:layout_below="@+id/emailtext"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate"
+        android:id="@+id/birthdatetext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_email"
+        />
+
+
+    <EditText
+        android:id="@+id/register_date"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:layout_width="200dp"
+        android:layout_below="@+id/birthdatetext"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/gendertext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_date"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_gender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/gendertext"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Institute"
+        android:id="@+id/institudetext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_gender"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_below="@+id/institudetext"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_institute"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:id="@+id/countrytext"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_institute"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:id="@+id/register_country"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrytext"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/occupationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_country"
+        android:layout_centerInParent="true"
+        android:text="Occupation"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_occupation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/occupationtext"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff0000"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_occupation"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_submit"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Register"
+        android:layout_below="@+id/register_msg"
+        android:layout_centerInParent="true"
+        android:textColor="@color/button"
+        android:background="@drawable/button"
+        />
+
+
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/usernametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/usernametext"
+            />
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/passwordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/username"
+            />
+
+        <EditText
+
+            android:id="@+id/password"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/passwordtext"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:textColor="#FF0000"
+            android:layout_centerInParent="true"/>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Login"
+            android:textColor="@color/button"
+            android:layout_below="@id/login_response"
+            android:background="@drawable/button"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/register_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:textColor="@color/button"
+            android:background="@drawable/button"
+            android:text="Register"
+            android:layout_below="@+id/login_button"
+            android:layout_centerInParent="true"
+            />
+
+
+
+        <!-- More GUI components go here  -->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

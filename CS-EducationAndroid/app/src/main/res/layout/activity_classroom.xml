@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/button"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+    <android.support.v4.widget.Space
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/enrolled_class_btn_class_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Enrolled Classes"
+        android:textSize="30sp"
+        android:background="@color/button"
+        android:drawableLeft="@drawable/courses"/>
+    <android.support.v4.widget.Space
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/join_class_btn_class_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:textSize="30sp"
+        android:text="       Join Class         "
+        android:background="@color/button"
+        android:drawableLeft="@drawable/joinclass"/>
+    <android.support.v4.widget.Space
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/create_class_btn_class_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="     Create Class      "
+        android:textSize="30sp"
+        android:background="@color/button"
+        android:drawableLeft="@drawable/create"/>
+    <android.support.v4.widget.Space
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
+
+
